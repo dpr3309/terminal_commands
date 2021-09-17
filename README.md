@@ -54,4 +54,4 @@ Bash не имеет сокращенного синтаксиса, которы
 git:
 - ```git diff --no-renames --name-only --diff-filter=D``` - создание списка именудаленных файлов;
 - ```git diff --no-renames --name-only --diff-filter=D -z | xargs -0 git checkout --``` - отмена удаленных файлов;
-- ```git revert commit_id``` - отмена изменений внесенных комитом, идентификатор которого указан (commit_id)
+- ```git revert commit_id``` - отмена изменений внесенных комитом, идентификатор которого указан (commit_id);
