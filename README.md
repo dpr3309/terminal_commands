@@ -53,6 +53,9 @@ Bash не имеет сокращенного синтаксиса, которы
 Рапаковка архивов:
 - ```unzip archive_name.zip``` - распаковать архив archive_name;
 
+grep
+- ```grep -i -R 'logEvent' .``` - !!!!  последний символ точка - . !!!!!  поиск строк содержащих logEvent во всех файлах текущей директории
+
 git:
 - ```git diff --no-renames --name-only --diff-filter=D``` - создание списка именудаленных файлов;
 - ```git diff --no-renames --name-only --diff-filter=D -z | xargs -0 git checkout --``` - отмена удаленных файлов;
