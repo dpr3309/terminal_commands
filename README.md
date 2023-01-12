@@ -72,3 +72,4 @@ other:
 - ```/Applications/Unity/Hub/Editor/2021.1.10f1/Unity.app/Contents/MacOS/Unity -batchmode -logfile /dev/stdout -quit -customBuildName iOS -projectPath . -buildTarget iOS -customBuildTarget iOS -customBuildPath /github/workspace/build/iOS/iOS -executeMethod ContinuousIntegration.BuildIos -buildVersion none -androidVersionCode 0 -androidKeystoreName -androidKeystorePass -androidKeyaliasName -androidKeyaliasPass -androidTargetSdkVersion --skazbukaProd true -quitTimeout 6000``` - запуск сборки билда сказбуки из терминала - аля ci/cd
 - ```sysctl -n hw.ncpu``` - узнать кол-во ЦПУ на маке
 - ```cat /proc/cpuinfo``` - узнать кол-во ЦПУ на linux
+- ```uname -a``` - получить информацию о аппаратной платформе. (выдаст длинную строку, ближе к концу которой можно найти обозначение аппаратной архитектуры: i386, i586, i686, x86 - 32-битный проц; x86_64, amd64,... - 64-битные процы) 
