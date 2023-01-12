@@ -70,3 +70,5 @@ git:
 other:
 - ```apktool d /Users/mac02/Projects/Builds/dev2.apk``` - распакует в директорию dev2 в текущей диркектории apk-шку, и в ней можно будет глянуть ресурсы и манифест
 - ```/Applications/Unity/Hub/Editor/2021.1.10f1/Unity.app/Contents/MacOS/Unity -batchmode -logfile /dev/stdout -quit -customBuildName iOS -projectPath . -buildTarget iOS -customBuildTarget iOS -customBuildPath /github/workspace/build/iOS/iOS -executeMethod ContinuousIntegration.BuildIos -buildVersion none -androidVersionCode 0 -androidKeystoreName -androidKeystorePass -androidKeyaliasName -androidKeyaliasPass -androidTargetSdkVersion --skazbukaProd true -quitTimeout 6000``` - запуск сборки билда сказбуки из терминала - аля ci/cd
+- ```sysctl -n hw.ncpu``` - узнать кол-во ЦПУ на маке
+- ```cat /proc/cpuinfo``` - узнать кол-во ЦПУ на linux
