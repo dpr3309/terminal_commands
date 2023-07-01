@@ -67,7 +67,9 @@ git:
 - ```git reset HEAD~``` - отменить последний локальный коммит, изменения останутся.
 - ```git filter-branch --index-filter "git rm --cached --ignore-unmatch path/to/file" --prune-empty HEAD``` - В случае, если вам необходимо полностью удалить файл из истории git - вам потребуется выполнить совсем не простую команду. другими словами - пройдет по истории текущей ветки и затрет во всех коммитах файл/директорию, и удалит из интекса. ВНИМАНИЕ! изменится sha комитов, и может потребоваться форс пуш, если ветка в удаленном репозитории уже есть
 - ```git status -v``` - показать изменения которые застейджены (после применения команды git add к файлу, изменения из этого файла попадают в Changes to be committed) но еще не закомичены;
-- '''git checkout [commit ID] -- path/to/file''' - revert single file from commit;
+- ```git checkout [commit ID] -- path/to/file``` - revert single file from commit;
+- ```git rm file1.txt```
+  ```git commit -m "remove file1.txt"``` - удаление файла из репозитория;
 
 other:
 - ```apktool d /Users/mac02/Projects/Builds/dev2.apk``` - распакует в директорию dev2 в текущей диркектории apk-шку, и в ней можно будет глянуть ресурсы и манифест
